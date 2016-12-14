@@ -1,0 +1,93 @@
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+html, body, .content {
+	height: 100%;
+}
+body {
+	text-align: center;
+}
+.content {
+	max-width: 80%;
+	margin: 0 auto;
+	/*padding: 5%;*/
+	font-family: 'Open Sans', sans-serif;
+}
+.banner, .product, .description {
+	margin-left: 10%;
+	margin-right: 10%;
+	/* border */
+	border: 1px solid black;
+	/* for positioning inner elements */
+	position: relative;
+}
+.banner {
+	height: 15%;
+	background-color: black;
+	color: white;
+}
+.product {
+	height: 45%;
+	background-color: white;
+	color: black;
+}
+.description {
+	height: 40%;
+	background-color: black;
+	color: white;
+}
+.banner img {
+	height: 50%;
+}
+.banner h1 {
+	position: absolute;
+	top: 30%;
+	left: 42%;
+
+	font-size: 1.3em;
+}
+.banner lol {
+	font-size: 2em;
+	font-style: italic;
+}
+.product img {
+	height: 80%;
+}
+.product .arrow {
+	opacity: 0.3;
+}
+.product .product-img {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.product .space {
+	height: 10%;
+}
+
+.description .product-title {
+	margin-top: 5%;
+	margin-bottom: 1%;
+	font-size: 120%;
+}
+.description .product-price {
+	margin: 5% auto;
+	font-size: 200%;
+}
+.description .more-details {
+	font-style: italic;
+	color: lightgrey;
+}
