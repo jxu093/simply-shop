@@ -15,6 +15,9 @@ figure, figcaption, footer, header{
   font-size: 100%;
   vertical-align: baseline;
 }
+a {
+	text-decoration: none;
+}
 html, body, .content {
 	height: 100%;
 }
@@ -27,7 +30,7 @@ body {
 	/*padding: 5%;*/
 	font-family: 'Open Sans', sans-serif;
 }
-.banner, .product, .description {
+.banner, .product, .description, .login-form, .preferences, .registration{
 	margin-left: 10%;
 	margin-right: 10%;
 	/* border */
@@ -40,39 +43,39 @@ body {
 	background-color: black;
 	color: white;
 }
+/* 
+	PRODUCT / BROWSING PAGE 
+*/
 .product {
 	height: 45%;
 	background-color: white;
 	color: black;
 }
 .description {
-	height: 40%;
+	min-height: 40%;
 	background-color: black;
 	color: white;
 }
 .banner img {
 	height: 50%;
 }
-.banner h1 {
+.banner #logout-btn, .banner #preferences-btn {
 	position: absolute;
-	top: 30%;
-	left: 42%;
+	right: 0;
+	font-size: 80%;
+}
 
-	font-size: 1.3em;
-}
-.banner lol {
-	font-size: 2em;
-	font-style: italic;
-}
 .product img {
-	height: 80%;
+	height: 75%;
 }
 .product .arrow {
 	opacity: 0.3;
+	cursor: pointer;
+	height: 55%;
 }
 .product .product-img {
-	margin-left: 5%;
-	margin-right: 5%;
+	margin-left: 4%;
+	margin-right: 4%;
 }
 .product .space {
 	height: 10%;
@@ -84,10 +87,72 @@ body {
 	font-size: 120%;
 }
 .description .product-price {
-	margin: 5% auto;
+	margin: 3% auto;
 	font-size: 200%;
 }
+.description .buy {
+	/*color: palegreen;*/
+	color: white;
+	border-top: 1px solid palegreen;
+	border-bottom: 1px solid palegreen;
+}
 .description .more-details {
+	/*color: skyblue;*/
+	border-top: 1px solid skyblue;
+	border-bottom: 1px solid skyblue;
+	cursor: pointer;
+}
+.description .buy, .description .more-details {
 	font-style: italic;
-	color: lightgrey;
+	font-size: 90%;
+}
+.description .product-details {
+	text-align: left;
+	padding: 3%;
+	display: none;
+}
+
+/* 
+	LOGIN PAGE
+*/
+.login-form {
+	height: 85%;
+	background-color: black;
+	color: white;
+}
+.login-form button {
+	width: 100px;
+}
+
+/*
+	REGISTRATION PAGE
+*/
+.registration {
+	height: 85%;
+	background-color: black;
+	color: white;
+}
+.registration .registration-form {
+	width: 50%;
+	margin: 0 auto;
+	text-align: left;
+}
+
+/* 
+	PREFERENCES PAGE
+*/
+.preferences {
+	height: 85%;
+	background-color: black;
+	color: white;
+}
+.preferences h1 {
+	font-size: 150%;
+	font-weight: bold;
+}
+.preferences .category {
+	cursor: pointer;
+}
+.preferences .subcategories {
+	display: none;
 }
