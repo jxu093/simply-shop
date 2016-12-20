@@ -176,9 +176,9 @@ var PRODUCT_HTML = `
 var LOGIN_HTML = `
 <div class="login-form">
 	<br><br><br>
-	Username: <input type="text">
+	Username: <input type="text" value="guest">
 	<br><br>
-	Password: <input type="password">
+	Password: <input type="password" value="guest">
 	<br><br><br>
 	<button id="login-btn">Login</button> <button id="register-btn">Register</button>
 </div>`
